@@ -1,0 +1,88 @@
+@import url('https://fonts.googleapis.com/css2?family=Love+Ya+Like+A+Sister&family=Oswald:wght@200;400;600&family=Roboto:wght@100;300&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Balsamiq+Sans&display=swap');
+
+.NavbarContainer {
+    width: 100%;
+    height: 88px;
+    top: 0;
+    background-color: rgb(255, 255, 255);
+}
+
+.elementNavbar {
+    position: relative;
+    height: 100%;
+}
+
+.containerLogo {
+    width: 10%;
+    border-radius: 1%;
+    left: 5%;
+}
+
+.mushroomLogo {
+    width: 100%;
+    height: 100%;
+}
+
+.containerCompanyName {
+    display: flex;
+    align-items: center;
+    width: 40%;
+    left: 15%;
+    top: -88px;
+}
+
+.companyNameText {
+    font-family: 'Love Ya Like A Sister', cursive;
+    font-size: 50px;
+    margin-top: 0px;
+}
+
+.containerButtonLogIn {
+    display: flex;
+    width: 13%;
+    left: 77%;
+    top: -176px;
+}
+
+.buttonLogIn {
+    top: 45px;
+    position: absolute;
+    font-family: 'Balsamiq Sans', cursive;
+    font-weight: bold;
+    right: 0;
+    font-size: 21px;
+    border: none;
+    background: transparent;
+
+}
+
+.buttonLogIn:hover {
+    text-decoration: underline;
+}
+
+@media (max-width: 600px) {
+    .NavbarContainer {
+        height: 58px;
+    }
+
+    .containerCompanyName {
+        top: -58px;
+    }
+
+    .companyNameText {
+        font-size: 40px;
+    }
+
+    .containerButtonLogIn {
+        top: -116px;
+    }
+
+    .buttonLogIn {
+        top: 30px;
+        position: absolute;
+        font-family: 'Balsamiq Sans', cursive;
+        right: 0;
+        font-size: 14px;
+    }
+}
