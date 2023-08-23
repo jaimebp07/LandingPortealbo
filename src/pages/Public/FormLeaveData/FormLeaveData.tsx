@@ -1,8 +1,10 @@
 import Navbar from "../../../components/Nabvar/Navbar"
 import '../../../styles/pages/FormLeaveData.scss'
+import {useForm} from 'react-hook-form'
 
 function FormLeaveData() {
 
+  const {register} = useForm();
   
   return (
     <div className="containerLeaveData">
@@ -14,7 +16,7 @@ function FormLeaveData() {
         <form className="leaveData-form">
           <div className="leaveData-field">
             <label htmlFor="nombre">Nombre:</label>
-            <input className="leaveData-input" type="text" id="nombre" name="nombre" placeholder="Escribe tu nombre" required />
+            <input className="leaveData-input" type="text" id="nombre" placeholder="Escribe tu nombre" {... register("nombre")} required />
           </div>
           <div className="leaveData-field">
             <label htmlFor="telefono">Número telefónico:</label>
